@@ -51,11 +51,11 @@ public class Toasts extends CordovaPlugin {
 	}
 
 	private void showToast(final String message, final int length) {
-		cordova.getActivity().runOnUiThread(new Runnable() {
-			public void run() {
-				toast = Toast.makeText(cordova.getActivity(), message, length);
-				toast.show();
-			}
-		});
+//		cordova.getActivity().runOnUiThread(new Runnable() {
+//			public void run() {
+//				toast = Toast.makeText(cordova.getActivity(), message, length);
+//				toast.show();
+//			}
+//		});
 	}
 }

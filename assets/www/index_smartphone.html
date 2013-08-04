@@ -46,46 +46,149 @@
 			</div><!-- here you see why in the javascript there is a page event: initPageVarsOnShow('Index'); and: initPageVarsOnCreate('Index'); -->
 			<!-- /panel -->
 			
-			<!-- right panel  -->
-			<div id="panelMenuRightIndex" data-role="panel" data-theme="b" data-position="right" data-display="overlay" data-dismissible="true" data-position-fixed="true" data-swipe-close="true" data-animate="true">
-				<ul id="panelMenuRightIndexUL" data-theme="b" data-role="listview"></ul>
-			</div><!-- here you see why in the javascript there is a page event: initPageVarsOnShow('Index'); and: initPageVarsOnCreate('Index'); -->
-			<!-- /panel -->
+			<!--&lt;!&ndash; right panel  &ndash;&gt;-->
+			<!--<div id="panelMenuRightIndex" data-role="panel" data-theme="b" data-position="right" data-display="overlay" data-dismissible="true" data-position-fixed="true" data-swipe-close="true" data-animate="true">-->
+				<!--<ul id="panelMenuRightIndexUL" data-theme="b" data-role="listview"></ul>-->
+			<!--</div>&lt;!&ndash; here you see why in the javascript there is a page event: initPageVarsOnShow('Index'); and: initPageVarsOnCreate('Index'); &ndash;&gt;-->
+			<!--&lt;!&ndash; /panel &ndash;&gt;-->
 			
 			<div data-role="header" data-tap-toggle="false" data-position="fixed" data-theme="a" class="headerSticky">
 				<div>
-					<p class="headerBarText"><img id="headerTitleIndex" onclick="togglePanel('#panelMenu' + window.localStorage.getItem('divIdGlobal'));" class="headerIconTitle" src="images/icons/ic_launcher_full_menu.png" /><img id="headerShareIndex" onclick="share(window.localStorage.getItem('shareTagSubject'),window.localStorage.getItem('shareTagText'));" class="headerIconShare" src="images/icons/ic_action_share_header.png" /><img id="headerOverflowIndex" onclick="togglePanel('#panelMenuRight' + window.localStorage.getItem('divIdGlobal'));" class="headerIconOverflow" src="images/icons/ic_action_overflow_header.png" />
+					<p class="headerBarText"><img id="headerTitleIndex" onclick="togglePanel('#panelMenu' + window.localStorage.getItem('divIdGlobal'));" class="headerIconTitle" src="images/icons/ic_launcher_full_menu.png" /><img id="headerShareIndex" onclick="share(window.localStorage.getItem('shareTagSubject'),window.localStorage.getItem('shareTagText'));" class="headerIconShare" src="images/icons/ic_action_share_header.png" />
+                        <!--<img id="headerOverflowIndex" onclick="togglePanel('#panelMenuRight' + window.localStorage.getItem('divIdGlobal'));" class="headerIconOverflow" src="images/icons/ic_action_overflow_header.png" />-->
 					&nbsp;</p>
 				</div><!-- populate the panel menu, also with the id Index in this case -->
 			</div><!-- /header -->
 			
 			<div data-role="content" data-theme="a">
-				
-				<h1>Index</h1>
-				<p>Light holo theme with dark title page.</p>
-				<a onclick="clearFirstBoot();" data-role="button">Clear to first boot</a>
-				<a onclick="$('#popupIndexPage').popup('open');" data-role="button">JQM Popup</a>
-				
-				<h1>About</h1>
-				<p>Get jpHolo on GitHub <a href="https://github.com/teusinkorg/jpHolo" target="_blank">here</a></p>
-				<p>Frameworks and plugins that are used to make this application template</p>
-				<p>PhoneGap <a href="http://phonegap.com/" target="_blank">here</a><br />
-				jQuery Mobile <a href="http://jquerymobile.com/" target="_blank">here</a><br />
-				Energize.js <a href="https://github.com/davidcalhoun/energize.js" target="_blank">here</a><br />
-				Android Icons <a href="http://www.androidicons.com/" target="_blank">here</a></p>
+
+                <div class="cat-items">
+
+
+                        <table class="category" border="1">
+
+                            <tbody>
+
+                            <tr class="cat-list-row0">
+
+
+                                <td class="list-title">
+                                    <a href="/nodarbību-saraksti/stundu-saraksts/29-saraksts-10-klasēm-a,b,c">
+                                        Saraksts 10. klasēm (A,B,C)</a>
+                                </td>
+
+
+
+
+                            </tr>
+                            <tr class="cat-list-row1">
+
+
+                                <td class="list-title">
+                                    <a href="/nodarbību-saraksti/stundu-saraksts/31-saraksts-10-klasēm-d,e,f">
+                                        Saraksts 10. klasēm (D,E,F)</a>
+                                </td>
+
+
+
+
+                            </tr>
+                            <tr class="cat-list-row0">
+
+
+                                <td class="list-title">
+                                    <a href="/nodarbību-saraksti/stundu-saraksts/30-saraksts-11-klasēm-a,b,c,d">
+                                        Saraksts 11. klasēm (A,B,C )</a>
+                                </td>
+
+
+
+
+                            </tr>
+                            <tr class="cat-list-row1">
+
+
+                                <td class="list-title">
+                                    <a href="/nodarbību-saraksti/stundu-saraksts/32-saraksts-11-klasēm-e,f,g">
+                                        Saraksts 11. klasēm (D,E )</a>
+                                </td>
+
+
+
+
+                            </tr>
+                            <tr class="cat-list-row0">
+
+
+                                <td class="list-title">
+                                    <a href="/nodarbību-saraksti/stundu-saraksts/33-saraksts-12-klasēm-a,-b,c,d">
+                                        Saraksts 12. klasēm (A, B,C )</a>
+                                </td>
+
+
+
+
+                            </tr>
+                            <tr class="cat-list-row1">
+
+
+                                <td class="list-title">
+                                    <a href="/nodarbību-saraksti/stundu-saraksts/34-saraksts-12-klasēm-e,-f,g">
+                                        Saraksts 12. klasēm (D,E, F )</a>
+                                </td>
+
+
+
+
+                            </tr>
+                            <tr class="cat-list-row0">
+
+
+                                <td class="list-title">
+                                    <a href="/nodarbību-saraksti/stundu-saraksts/26-saraksts-7-klasēm">
+                                        Saraksts 7. klasēm</a>
+                                </td>
+
+
+
+
+                            </tr>
+                            <tr class="cat-list-row1">
+
+
+                                <td class="list-title">
+                                    <a href="/nodarbību-saraksti/stundu-saraksts/27-saraksts-8-klasēm">
+                                        Saraksts 8. klasēm</a>
+                                </td>
+
+
+
+
+                            </tr>
+                            <tr class="cat-list-row0">
+
+
+                                <td class="list-title">
+                                    <a href="/nodarbību-saraksti/stundu-saraksts/28-saraksts-9-klasēm">
+                                        Saraksts 9. klasēm</a>
+                                </td>
+
+
+
+
+                            </tr>
+                            </tbody>
+                        </table>
+
+
+
+                </div>
 				
 			</div><!-- /content -->
-			
-			<div data-role="footer" data-tap-toggle="false" data-position="fixed" data-theme="f" class="footerSticky"><!-- this class makes sure there is a blue line above footer -->
-				<div>
-					<img id="footerShareIndex" onclick="share(window.localStorage.getItem('shareTagSubject'),window.localStorage.getItem('shareTagText'));" src="./images/icons/ic_action_share_header.png" class="footerIconLeft">
-					<img id="footerToastIndex" onclick="toast('This is a toast message','short');" src="./images/icons/ic_action_share_header.png" class="footerIconRight">
-				</div>
-			</div><!-- /footer -->
 		
 		</div><!-- /page -->
 		
-		<div id="secondPage" data-role="page" data-theme="c">
+		<div id="secondPage" data-role="page" data-theme="a">
 			
 			<!-- left panel  -->
 			<div id="panelMenuSecond" data-role="panel" data-theme="b" data-position="left" data-display="overlay" data-dismissible="true" data-position-fixed="true" data-swipe-close="true" data-animate="true">
@@ -106,7 +209,7 @@
 				</div>
 			</div><!-- /header -->
 			
-			<div data-role="content" data-theme="c">
+			<div data-role="content" data-theme="a">
 				
 				<h1>Page 2</h1>
 				<p>Dark holo theme page.</p>

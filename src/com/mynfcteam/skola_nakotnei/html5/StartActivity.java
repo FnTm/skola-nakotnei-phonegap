@@ -1,4 +1,4 @@
-package org.teusink.jpholo;
+package com.mynfcteam.skola_nakotnei.html5;
 
 import org.apache.cordova.DroidGap;
 

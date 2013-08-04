@@ -5,35 +5,35 @@
 
 // Toasts
 function toast(text, duration) {
-	var toasts = cordova.require("cordova/plugin/toasts");
-	if (duration === "short") {
-		toasts.showShort(text,
-			function () {
-				//console.log("PhoneGap Plugin: Toast short: callback success");
-			},
-			function () {
-				console.log("PhoneGap Plugin: Toast short: callback error");
-			}
-			);
-	} else if (duration === "long") {
-		toasts.showLong(text,
-			function () {
-				//console.log("PhoneGap Plugin: Toast long: callback success");
-			},
-			function () {
-				console.log("PhoneGap Plugin: Toast long: callback error");
-			}
-			);
-	} else {
-		toasts.cancel(
-			function () {
-				//console.log("PhoneGap Plugin: Toast cancel: callback success");
-			},
-			function () {
-				console.log("PhoneGap Plugin: Toast cancel: callback error");
-			}
-		);
-	}
+//	var toasts = cordova.require("cordova/plugin/toasts");
+//	if (duration === "short") {
+//		toasts.showShort(text,
+//			function () {
+//				//console.log("PhoneGap Plugin: Toast short: callback success");
+//			},
+//			function () {
+//				console.log("PhoneGap Plugin: Toast short: callback error");
+//			}
+//			);
+//	} else if (duration === "long") {
+//		toasts.showLong(text,
+//			function () {
+//				//console.log("PhoneGap Plugin: Toast long: callback success");
+//			},
+//			function () {
+//				console.log("PhoneGap Plugin: Toast long: callback error");
+//			}
+//			);
+//	} else {
+//		toasts.cancel(
+//			function () {
+//				//console.log("PhoneGap Plugin: Toast cancel: callback success");
+//			},
+//			function () {
+//				console.log("PhoneGap Plugin: Toast cancel: callback error");
+//			}
+//		);
+//	}
 }
 
 // Share
@@ -119,12 +119,12 @@ function pressBackButton() {
 
 // pause app
 function onPause() {
-	toast('App paused', 'short');
+	//toast('App paused', 'short');
 }
 
 // resume app
 function onResume() {
-	toast('App resumed', 'short');
+	//toast('App resumed', 'short');
 }
 
 // get current date as string
@@ -157,11 +157,11 @@ function panelMenu(divId) {
 	var panel = '#panelMenu' + divId + 'UL';
 	$(panel).children().remove('li');
 	$(panel).append('<li data-icon="false" class="headerSpace"><p>&nbsp;</p></li>'); // empty space, needed for header
-	$(panel).append('<li data-role="list-divider"><p class="panelTextDivider">jpHolo</p></li>');
-	$(panel).append('<li data-icon="false"><a class="panelText" href="#indexPage"><img src="./images/icons/ic_action_home.png" class="ui-li-icon largerIcon">Index page</a></li>');
-	$(panel).append('<li data-role="list-divider"><p class="panelTextDivider">Other pages</p></li>');
-	$(panel).append('<li data-icon="false"><a class="panelText" href="#secondPage"><img src="./images/icons/ic_action_info.png" class="ui-li-icon largerIcon">Second page</a></li>');
-	$(panel).append('<li data-icon="false"><a class="panelText" href="#thirdPage"><img src="./images/icons/ic_action_info.png" class="ui-li-icon largerIcon">Third page</a></li>');
+	$(panel).append('<li data-role="list-divider"><p class="panelTextDivider">Stundu saraksts</p></li>');
+	$(panel).append('<li data-icon="false"><a class="panelText" href="#indexPage"><img src="./images/icons/ic_action_home.png" class="ui-li-icon largerIcon">Saraksti</a></li>');
+	$(panel).append('<li data-role="list-divider"><p class="panelTextDivider">Noderīga informācija</p></li>');
+	$(panel).append('<li data-icon="false"><a class="panelText" href="#secondPage"><img src="./images/icons/ic_action_info.png" class="ui-li-icon largerIcon">Stundu izmaiņas</a></li>');
+	$(panel).append('<li data-icon="false"><a class="panelText" href="#thirdPage"><img src="./images/icons/ic_action_info.png" class="ui-li-icon largerIcon">Stundu laiki</a></li>');
 	$(panel).listview('refresh');
 }
 
@@ -288,15 +288,15 @@ function initPageVarsOnCreate(id) {
 	// do nothing
 	// every page but...	
 	if (id !== "Index") {
-		toast('This is not the Index page', 'short');
+		//toast('This is not the Index page', 'short');
 	}
 	// specific page...
 	if (id === "Index") {
 		isDeviceReady("toastReady");
 	} else if (id === "Second") {
-		toast('This is the Second page', 'short');
+		//toast('This is the Second page', 'short');
 	} else if (id === "Third") {
-		toast('This is the Third page', 'short');
+		//toast('This is the Third page', 'short');
 	}
 }
 
@@ -305,8 +305,7 @@ function initPageVarsOnShow(id) {
 	// every page...
 	window.localStorage.setItem("panelLeft", 'closed');
 	window.localStorage.setItem("divIdGlobal", id);
-	window.localStorage.setItem("shareTagSubject", 'JQM Example');
-	window.localStorage.setItem("shareTagText", 'A nice PhoneGap and JQM example by Teusink.org http://teusink.blogspot.com/2013/04/android-example-app-with-phonegap-and.html #TeusinkOrg');
+	window.localStorage.setItem("shareTagSubject", 'Skola nākotnei');
 	panelMenu(id);
 	panelMenuRight(id);
 	panelHandling();

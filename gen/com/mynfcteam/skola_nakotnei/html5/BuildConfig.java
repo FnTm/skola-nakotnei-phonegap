@@ -1,5 +1,5 @@
 /** Automatically generated file. DO NOT MODIFY */
-package org.teusink.jpholo;
+package com.mynfcteam.skola_nakotnei.html5;
 
 public final class BuildConfig {
     public final static boolean DEBUG = true;

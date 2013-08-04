@@ -5,7 +5,7 @@
  * should not be modified by hand.
  */
 
-package org.teusink.jpholo;
+package com.mynfcteam.skola_nakotnei.html5;
 
 public final class R {
     public static final class attr {
