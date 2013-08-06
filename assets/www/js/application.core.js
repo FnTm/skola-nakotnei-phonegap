@@ -162,7 +162,8 @@ function panelMenu(divId) {
 	$(panel).append('<li data-role="list-divider"><p class="panelTextDivider">Noderīga informācija</p></li>');
 	$(panel).append('<li data-icon="false"><a class="panelText" href="#secondPage"><img src="./images/icons/ic_action_info.png" class="ui-li-icon largerIcon">Stundu izmaiņas</a></li>');
 	$(panel).append('<li data-icon="false"><a class="panelText" href="#thirdPage"><img src="./images/icons/ic_action_info.png" class="ui-li-icon largerIcon">Stundu laiki</a></li>');
-	$(panel).listview('refresh');
+    $(panel).append('<li data-icon="false" class="headerSpace"><p>&nbsp;</p></li>'); // empty space, needed for header
+    $(panel).listview('refresh');
 }
 
 // default right panelmenu (define menu for all pages)
@@ -227,11 +228,11 @@ function pressEffectHeader(share, light) {
 		// header title press effect (left panel)
 		$(document).on('vmousedown', "#headerTitle" + window.localStorage.getItem("divIdGlobal"), function (e) {
 			if (e) { e.preventDefault(); }
-			$("#headerTitle" + window.localStorage.getItem("divIdGlobal")).attr("src", "images/icons/ic_launcher_full_arrow_selected.png");
+			$("#headerTitle" + window.localStorage.getItem("divIdGlobal")).attr("src", "images/icons/ic_launcher_full_menu_selected.png");
 		});
 		$(document).on('vmouseup', "#headerTitle" + window.localStorage.getItem("divIdGlobal"), function (e) {
 			if (e) { e.preventDefault(); }
-			$("#headerTitle" + window.localStorage.getItem("divIdGlobal")).attr("src", "images/icons/ic_launcher_full_arrow.png");
+			$("#headerTitle" + window.localStorage.getItem("divIdGlobal")).attr("src", "images/icons/ic_launcher_full_menu.png");
 		});
 	}
 	// overflow title press effect (right panel)
